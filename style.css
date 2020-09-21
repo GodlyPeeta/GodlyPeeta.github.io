@@ -52,6 +52,12 @@ color:#2e3440;
 border: 1px solid #eceff4;
 }
 
+.button:disabled {
+    background-color: #bf616a;
+    color: #eceff4;
+    border: 1px solid #eceff4;
+}
+
 .tableLeft {
     float:left
 }

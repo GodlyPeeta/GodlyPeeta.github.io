@@ -8,7 +8,16 @@ function sellBook() {
     materialValues[0]-=paper
     cost = Math.round(Math.random()*300)/100+9
     money += cost;
+    if (materialValues[0]<=0){
+        materialValues[0]=0
+    }
 };
+
+function disableEnableButtons() {
+    if (materialValues[0] == 0){
+        document.getElementById("sellBook").disabled=true
+    }
+}
 
 function refreshMaterials() {
     var names =""
@@ -28,6 +37,7 @@ function refreshMoney() {
 function tick() {
     refreshMoney()
     refreshMaterials()
+    disableEnableButtons()
     console.log("tick")
 }
 
