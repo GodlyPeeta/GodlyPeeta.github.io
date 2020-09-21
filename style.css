@@ -12,10 +12,6 @@
     --branch: 1px solid #4c566a;
 }
 
-html {
-    overflow: hidden;
-}
-
 body {
     background: var(--background);
     width: 100vw;
@@ -29,6 +25,7 @@ body {
 button:focus {outline:0;}
 
 .box {
+  position: fixed;
   border: 1px solid #eceff4;
   margin-left: 10px;
   width: 350px;
@@ -70,17 +67,10 @@ h1 {
     color: #eceff4;
 }
 
-/* you can fill the texarea above/below? the Viewport */
-#search {
-    font-family: var(--font);
-    font-size: 1rem;
-    color: var(--foreground);
-    background-color: var(--background);
-    border: none;
-    outline: none;
-    position: absolute;
-    width: 50vw;
-    height: 50vh;
-    word-break: break-all;
-    resize:none;
+.materials {
+
+}
+
+.book {
+    left: 380px
 }
