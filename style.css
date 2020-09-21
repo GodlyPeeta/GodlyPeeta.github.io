@@ -29,7 +29,9 @@ button:focus {outline:0;}
   border: 1px solid #eceff4;
   margin-left: 10px;
   width: 350px;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 .button {
@@ -50,6 +52,14 @@ color:#2e3440;
 border: 1px solid #eceff4;
 }
 
+.tableLeft {
+    float:left
+}
+
+.tableRight {
+    float:right
+}
+
 .count {   
     margin: 30px 30px;
     display: inline-block;
@@ -57,6 +67,12 @@ border: 1px solid #eceff4;
     font-size: 40px;
     font-weight: normal;
     color: #eceff4;
+}
+
+p {
+    color: #eceff4;
+    font-size: 12px;
+    font-family: var(--font);
 }
 
 h1 {
