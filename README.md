@@ -1,2 +1,2 @@
-# incrementalgame
+# game which is incremental
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
