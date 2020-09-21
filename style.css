@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "Jetbrains Mono";
+    font-family: "Consolas";
 }
 
 :root {
-    --font: "Jetbrains Mono";
+    --font: "Consolas";
     --background: #2e3440;
     --foreground: #eceff4;
     --pink: #b48ead;
@@ -13,7 +13,6 @@
 }
 
 html {
-    font-size: 18px;
     overflow: hidden;
 }
 
@@ -23,88 +22,52 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
 }
 
-.prompt {
+button:focus {outline:0;}
+
+.box {
+  border: 1px solid #eceff4;
+  margin-left: 10px;
+  width: 350px;
+  padding: 10px;
+}
+
+.button {
+    background-color: #2e3440;
+    color: #eceff4;
+    border: 1px solid #eceff4;
+    padding: 5px 10px;
+    display: inline-block;
     font-family: var(--font);
-    color: var(--foreground);
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+.button:active {
+background-color:#eceff4;
+color:#2e3440;
+border: 1px solid #eceff4;
 }
 
-.prompt~.prompt {
-    padding: 1.5rem 0 0.3125rem;
-}
-
-span {
-    color: var(--pink);
+.count {   
+    margin: 30px 30px;
+    display: inline-block;
+    font-family: var(--font);
+    font-size: 40px;
+    font-weight: normal;
+    color: #eceff4;
 }
 
 h1 {
-    display: inline;
+    display: inline-block;
     font-family: var(--font);
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: normal;
-    color: var(--pink);
-    cursor: pointer;
-}
-
-.tree > ul {
-    margin: 0;
-    padding-left: 1rem;
-}
-
-ul {
-    list-style: none;
-    padding-left: 2.5rem;
-}
-
-li {
-    position: relative;
-}
-
-li.hideChildren > ul {
-    display: none;
-}
-
-li::before, li::after {
-    content: "";
-    position: absolute;
-    left: -0.75rem;
-}
-
-li::before {
-    border-top: var(--branch);
-    top: 0.75rem;
-    width: 0.5rem;
-}
-
-li::after {
-    border-left: var(--branch);
-    height: 100%;
-    top: 0.25rem;
-}
-
-li:last-child::after {
-    height: 0.5rem;
-}
-
-a {
-    font-family: var(--font);
-    font-size: 1rem;
-    color: var(--foreground);
-    text-decoration: none;
-    outline: none;
-}
-
-a:hover,
-a:focus {
-    color: var(--background);
-    background: var(--blue);
-}
-
-form h1 {
-    padding-left: 0.125rem;
+    color: #eceff4;
 }
 
 /* you can fill the texarea above/below? the Viewport */
