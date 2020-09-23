@@ -10,15 +10,38 @@
       <p class="count">Money: $0.00</p>
       <br>
       <div class = "book box">
-        <h1>Books</h1>
+        <div class="inline">
+          <h1>Books</h1>
+        </div>
+        <div>
+          <form>
+            <label for="bookCost">Book Cost: $</label>
+            <input type="number" class = "form" name="bookCost" id="bookCost" value=10>
+            <span class="sub" id="bookDemand">Demand: </span>
+          </form>
+        </div>
         <br>
-        <button type="button" onClick="sellBook()" class = "button" id = "sellBook">Sell book</button>
+        <button type="button" onClick="makeBookBtn()" class = "button" id = "sellBook">Make book</button>
       </div>
       <div class="materials box">
         <h1>Available Materials</h1>
         <br>
         <p class="tableLeft materialNames"></p>
         <p class="tableRight materialValues"></p>
+      </div>
+
+      <div class="inventory box">
+        <h1>Inventory</h1>
+        <br>
+        <p class="tableLeft inventoryNames"></p>
+        <p class="tableRight inventoryValues"></p>
+      </div>
+
+      <div class="buyMaterials box">
+        <h1>Buy Materials</h1>
+        <br>
+        <p class="tableLeft buyNames"></p>
+        <div class="tableRight buyCost"></div>
       </div>
     </main>
   </body>

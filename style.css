@@ -23,8 +23,10 @@ body {
 }
 
 button:focus {outline:0;}
+.form:focus {outline:0;}
 
 .box {
+  display: inline-block;
   position: fixed;
   border: 1px solid #eceff4;
   margin-left: 10px;
@@ -46,14 +48,14 @@ button:focus {outline:0;}
     cursor: pointer;
   }
 
-.button:active {
+/* .button:active {
 background-color:#eceff4;
 color:#2e3440;
 border: 1px solid #eceff4;
-}
+}*/
 
 .button:disabled {
-    background-color: #bf616a;
+    background-color: #8C9199;
     color: #eceff4;
     border: 1px solid #eceff4;
 }
@@ -81,6 +83,28 @@ p {
     font-family: var(--font);
 }
 
+.sub {
+    color: #8C9199;
+    font-size: 12px;
+    font-family: var(--font);
+}
+
+.form {
+    width: 10%;
+    font-family: var(--font);
+    color: #eceff4;
+    background: transparent;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #eceff4;
+}
+
+label {
+    color: #eceff4;
+    font-size: 12px;
+    font-family: var(--font);
+}
+
 h1 {
     display: inline-block;
     font-family: var(--font);
@@ -90,7 +114,19 @@ h1 {
 }
 
 .materials {
+    height: 350px;
+}
 
+.inventory {
+    top: 468px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.buyMaterials {
+    top: 838px;
+    height: 350px;
+    margin-top: 10px;
 }
 
 .book {
